@@ -40,7 +40,7 @@ instala todas las dependencias funcionales.
 
 construye los archivos binarios para producción.
 ``
-    npm build
+    npm run build
 ``
 
 inicializa el servidor backend
@@ -68,8 +68,8 @@ Si el contenedor esta OK entonces puedes acceder a tu navegador con la direcció
 
 
 ```sh
-npm init
-npm build
+npm run init
+npm run build
 docker-compose up -d
 docker ps
 ```
