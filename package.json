@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd ./frontend && rm -rf build && npm run build && rm -rf ../backend/public && mv ./build ../backend && cd ../backend && mv ./build ./public && rm -rf ../frontend/build",
+    "init": "cd ./frontend && npm i --force && cd ../backend && npm i",
+    "build": "cd ./frontend && rm -rf build && npm run build && rm -rf ../backend/public && mv ./build ../backend && cd ../backend && mv ./build ./public && npm run build && rm -rf ../frontend/build",
     "start": "cd ./backend && npm start"
   },
   "keywords": [],
