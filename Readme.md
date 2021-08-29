@@ -31,7 +31,7 @@
 ---
 ## Ambiente Sin docker
 
-Si deseas ejecutar la aplicación sin necesidad de instalar docker lo unico que tienes que hacer es ejecutar los siguientes comandos, ubicado en la raíz del proyecto.
+Si deseas ejecutar la aplicación sin necesidad de instalar docker deberas isntalar nodejs y npm seguido a eso deberas configurar las variables de entorno para la base de datos, luego a esto lo unico que tienes que hacer es ejecutar los siguientes comandos, ubicado en la raíz del proyecto.
 
 instala todas las dependencias funcionales.
 ``
