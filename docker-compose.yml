@@ -15,6 +15,20 @@ services:
             -   MYSQL_USER=localagenda
             -   MYSQL_PASSWORD=123456
 
+    app:
+        container_name: agenda-app
+        build:  ./backend
+        ports: 
+            -   "4000:4000"
+        depends_on: 
+            -   mysql_agenda_db
+        networks:
+            app_net:
+        env_file:
+            -   ./backend/.env
+            -   ./backend/.env.production
+        image:  agenda-app
+
 volumes:
     mysql_vol:
 
