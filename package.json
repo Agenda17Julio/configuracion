@@ -1,0 +1,13 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd ./frontend && rm -rf build && npm run build && rm -rf ../backend/public && mv ./build ../backend && cd ../backend && mv ./build ./public && rm -rf ../frontend/build",
+    "start": "cd ./backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
